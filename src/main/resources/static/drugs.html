@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drugs Management</title>
+    <link rel="stylesheet" type="text/css" href="drugs.css">
+</head>
+<body>
+<h1>Drugs Management</h1>
+
+<form id="drugsForm" method="post">
+    <div class="form-group">
+        <label for="commercy_name">Commercial Name:</label>
+        <input type="text" id="commercy_name" name="commercy_name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="mnn_name">MNN Name:</label>
+        <input type="text" id="mnn_name" name="mnn_name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+    </div>
+
+    <div class="form-group">
+        <label for="release_form">Release Form:</label>
+        <input type="text" id="release_form" name="release_form" required>
+    </div>
+
+    <div class="form-group">
+        <label for="quantity_in_primary_pack">Quantity in Primary Pack:</label>
+        <input type="number" id="quantity_in_primary_pack" name="quantity_in_primary_pack" required>
+    </div>
+
+    <button type="submit">Save</button>
+</form>
+
+<h2>Drugs List</h2>
+<table id="drugsTable">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Commercial Name</th>
+        <th>MNN Name</th>
+        <th>Country</th>
+        <th>Release Form</th>
+        <th>Quantity in Primary Pack</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Drugs list will be populated dynamically -->
+    </tbody>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="drugs.js"></script>
+</body>
+</html>

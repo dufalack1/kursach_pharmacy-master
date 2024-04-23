@@ -1,0 +1,13 @@
+server:
+  port: 8100
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url:  ${INTERVIEW_DATABASE_URL:jdbc:mysql://localhost:3306/cursovaya}
+    username: ${INTERVIEW_DATABASE_USER:root}
+    password: ${INTERVIEW_DATABASE_PASSWORD:qwert5836}
+  jpa:
+    hibernate:
+      ddl-auto: update
+
